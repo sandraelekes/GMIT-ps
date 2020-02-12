@@ -3,8 +3,9 @@
 
 s = input ("Enter a sentence: ")
 
-# using slicing to reverse a string without defining 
-# the length of string because it is unknown
+# using slicing to reverse a string because it seemed most simple
+# information on reversing a string found on:
+# https://www.geeksforgeeks.org/reverse-string-python-5-different-ways/
 
 print (s[::-2])
 
