@@ -1,5 +1,6 @@
 # Problems 2020
 
+<<<<<<< HEAD
 This repository is used for the problem sets given during the Programming and scripting module on Higher Diploma in Data Analytics course from GMIT.\
 Here I will explain how I came to the solution of given tasks, reference the sources I researched for solving the problems and list the technologies I used for creating and testing the code.\
 I have previous knowledge and understanding of basics of coding in python so for some tasks I didn't require extensive research.
@@ -125,6 +126,36 @@ When user inputs the positive integer the output is :
   ### ***Plotting***
     
     Write a program that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes. 
+=======
+This repository is used for the problem sets given during the Programming and scripting module.
+
+## Weekly tasks
+
+  ### *Week 1*
+
+
+  ### *Week 2*
+
+
+  ### *Week 3*
+
+
+  ### *Week 4*
+
+
+  ### *Week 5*
+
+
+  ### *Week 6*
+
+
+  ### *Week 7*
+
+
+  ### *Week 8*
+
+
+>>>>>>> a40f46715354556ec75ab55bee646af49af8bf6a
 
 ## Technologies
 
