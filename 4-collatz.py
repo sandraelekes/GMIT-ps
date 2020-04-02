@@ -9,7 +9,7 @@ x = int(input("Add any positive integer: "))
 
 # if user enters a negative integer program lets them know
 # and asks for input again
-if x < 1:
+while x < 1:
         print (x, "isn't a positive integer.")
         x = int(input ("Add any positive integer: "))
 
