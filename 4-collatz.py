@@ -1,4 +1,4 @@
-# Program asks the user to input any positive integer and
+# Program that asks the user to input any positive integer and
 # outputs the successive values of the following calculation.
 # At each step calculate the next value by taking the current value and,
 # if it is even, divide it by two,
@@ -6,6 +6,12 @@
 # Have the program end if the current value is one.
 
 x = int(input("Add any positive integer: "))
+
+# if user enters a negative integer program lets them know
+# and asks for input again
+if x < 1:
+        print (x, "isn't a positive integer.")
+        x = int(input ("Add any positive integer: "))
 
 # used print () function "end" parameter to print all
 # "x" values in one line
@@ -23,13 +29,7 @@ while x > 1:
     # if the number has a remainder it performs other action
     else :
         x = (x*3) + 1
-        print (int(x), end = " "),
-
-# if user enters a negative integer program lets them know
-# and asks for input again
-if x < 1:
-        print ("isn't a positive integer.")
-        x = int(input ("Add any positive integer: "))
+        print (int(x), end = " ")
 
 # I wanted to print all the answers in the same line 
 # as in task example, and I  found a solution here:
