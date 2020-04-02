@@ -12,3 +12,7 @@ if today.weekday() > 4:
     print ("It is the weekend, yay!")
 else:
     print ("Yes, unfortunately today is a weekday.")
+
+# references:
+# 1) video from the module learnonline: https://web.microsoftstream.com/video/77f26693-82ed-4006-8c22-c61d37e2f77f
+# 2) https://docs.python.org/3/library/datetime.html#datetime.datetime.now
