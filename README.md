@@ -83,7 +83,6 @@ The statement *if* checks if the number is even using modulus operation. If the 
 If the remainder is not zero, program performs operations from statement *else* - multiplying the number by three and adding one, and prints out the result.
 
 
-
 User call of the program is :
 
 ```
