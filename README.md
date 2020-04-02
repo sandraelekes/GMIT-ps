@@ -1,6 +1,6 @@
 # Problems 2020
 
-<<<<<<< HEAD
+
 This repository is used for the problem sets given during the Programming and scripting module on Higher Diploma in Data Analytics course from GMIT.\
 Here I will explain how I came to the solution of given tasks, reference the sources I researched for solving the problems and list the technologies I used for creating and testing the code.\
 I have previous knowledge and understanding of basics of coding in python so for some tasks I didn't require extensive research.
@@ -22,7 +22,9 @@ I have previous knowledge and understanding of basics of coding in python so for
 
 ### ***BMI***
 
-    Write a program that calculates somebody's Body Mass Index (BMI). The inputs are the person's height in centimetres and weight in kilograms. The output is their weight divided by their height in metres squared. 
+    Write a program that calculates somebody's Body Mass Index (BMI). 
+    The inputs are the person's height in centimetres and weight in kilograms. 
+    The output is their weight divided by their height in metres squared. 
 
 This program is a basic calculation of a given formula based on the users input.\
 User inputs the height in centimeters and weight in kilograms. The challenge here is not to forget to convert height from centimeters to meters in order to get the correct answer.\
@@ -75,7 +77,10 @@ and the output is :
 
   ### ***Collatz***
     
-    Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation. At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one. Have the program end if the current value is one.
+    Write a program that asks the user to input any positive integer and outputs the successive 
+    values of the following calculation. At each step calculate the next value by taking the 
+    current value and, if it is even, divide it by two, but if it is odd, multiply it by three 
+    and add one. Have the program end if the current value is one.
 
 Even though the task didn't require to have a fix for wrongly inputed negative number, it's added to avoid errors. This is done with *while* loop.
 
@@ -115,7 +120,8 @@ When user inputs the positive integer the output is :
   ### ***Square root***
 
     Write a program that takes a positive floating-point number as input and outputs an approximation of its square root. You should create a function called sqrt that does this.\
-    addition to the task: The weekly task is trickier than the previous ones but I really suggest you try to crack it.
+Addition to the task: 
+    The weekly task is trickier than the previous ones but I really suggest you try to crack it.
     You'll find a simple algorithm for the problem if you Google "Newton's method for square roots".
     I really recommend trying to code it up yourself rather than looking at others' implementations.
 
@@ -126,36 +132,6 @@ When user inputs the positive integer the output is :
   ### ***Plotting***
     
     Write a program that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes. 
-=======
-This repository is used for the problem sets given during the Programming and scripting module.
-
-## Weekly tasks
-
-  ### *Week 1*
-
-
-  ### *Week 2*
-
-
-  ### *Week 3*
-
-
-  ### *Week 4*
-
-
-  ### *Week 5*
-
-
-  ### *Week 6*
-
-
-  ### *Week 7*
-
-
-  ### *Week 8*
-
-
->>>>>>> a40f46715354556ec75ab55bee646af49af8bf6a
 
 ## Technologies
 
