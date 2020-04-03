@@ -26,14 +26,18 @@ Weekly tasks
     The inputs are the person's height in centimetres and weight in kilograms. 
     The output is their weight divided by their height in metres squared. 
 
-This program is a basic calculation of a given formula based on the users input.\
-User inputs the height in centimeters and weight in kilograms. The challenge here is not to forget to convert height from centimeters to meters in order to get the correct answer.\
-Even though the formula could be done in one line, this way is chosen to simplify the calculation by adding a new variable *hm*. This variable is used for converting height from centimeter to meters.\
+This program is a basic calculation of a given formula based on the users input.
+
+User inputs the height in centimeters and weight in kilograms. The challenge here is not to forget to convert height from centimeters to meters in order to get the correct answer.
+
+Even though the formula could be done in one line, this way is chosen to simplify the calculation by adding a new variable *hm*. This variable is used for converting height from centimeter to meters.
+
 The [rounding](https://www.geeksforgeeks.org/round-function-python) of the result to 2 points was added for a nicer touch. The idea goes to another student.
 
 <details>
            <summary>User point of view</summary>
            <p>
+
 User call of the program is :
 
 ```
@@ -69,6 +73,7 @@ The syntax of slicing is:
 <details>
            <summary>User point of view</summary>
            <p>
+
 User call of the program is :
 
 ```
@@ -139,14 +144,17 @@ When user inputs the positive integer the output is :
 
     Write a program that outputs whether or not today is a weekday.
 
-For this program it is neccessary to import *datetime* module so we can manipulete date and time. Even though the Programming and scripting [video](https://web.microsoftstream.com/video/77f26693-82ed-4006-8c22-c61d37e2f77f) gave the initial idea, a little bit of research on [Python documentation](https://docs.python.org/3/library/datetime.html#datetime.datetime.now) helped to crack the code.\
-There I found out that by implementing *date.weekday()*, where Monday is 0 and Sunday is 6, I can easily check, with the help of *if* statement, whether today is weekday or weekend.
+For this program it is neccessary to import *datetime* module so we can manipulete date and time.
+
+Even though the Programming and scripting [video](https://web.microsoftstream.com/video/77f26693-82ed-4006-8c22-c61d37e2f77f) gave the initial idea, a little bit of research on [Python documentation](https://docs.python.org/3/library/datetime.html#datetime.datetime.now) helped to crack the code.\
+There it was found that by implementing *date.weekday()*, where Monday is 0 and Sunday is 6, it can easily be checked, with the help of *if* statement, whether today is weekday or weekend.
 
 It's important to run the program on both the weekday and weekend to get a correct result.
 
 <details>
            <summary>User point of view</summary>
            <p>
+
 User call of the program is :
 
 ```
@@ -178,7 +186,9 @@ Addition to the task:
     You'll find a simple algorithm for the problem if you Google "Newton's method for square roots".
     I really recommend trying to code it up yourself rather than looking at others' implementations.
 
-This program required hours of research. I checked the websites [Geeksforgeeks.org](https://www.geeksforgeeks.org/program-for-newton-raphson-method/), [StackOverflow](https://stackoverflow.com/questions/12850100/finding-the-square-root-using-newtons-method-errors), [Hackernoon](https://hackernoon.com/calculating-the-square-root-of-a-number-using-the-newton-raphson-method-a-how-to-guide-yr4e32zo), [Math.ubc.ca](https://www.math.ubc.ca/~pwalls/math-python/roots-optimization/newton/), but the most helpfull one was a Youtube video by [Mechtutor com](https://www.youtube.com/watch?v=szQUIRPrAgQ). The most challenging part was the understanding how the method works, and the coding after that was just implementing mathematical formulas.
+This program required hours of research. Websites used for research and understandig are [Geeksforgeeks.org](https://www.geeksforgeeks.org/program-for-newton-raphson-method/), [StackOverflow](https://stackoverflow.com/questions/12850100/finding-the-square-root-using-newtons-method-errors), [Hackernoon](https://hackernoon.com/calculating-the-square-root-of-a-number-using-the-newton-raphson-method-a-how-to-guide-yr4e32zo), [Math.ubc.ca](https://www.math.ubc.ca/~pwalls/math-python/roots-optimization/newton/), but the most helpfull one was a Youtube video by [Mechtutor com](https://www.youtube.com/watch?v=szQUIRPrAgQ). 
+
+The most challenging part was the understanding how the method works, and the coding after that was just implementing mathematical formulas.
 
 Like in the Collatz task, here I also implemented checking if the user input indeed is the positive floating-point number. This was done with an *if* statement checking if the number was smaller than zero. If it is, number was changed into a postive one using absolute value with the help of *abs()* function.
 
@@ -187,6 +197,7 @@ Function was created with a keyword *def sqrt()*, and later called with the keyw
 <details>
            <summary>User point of view</summary>
            <p>
+
 User call of the program is :
 
 ```
@@ -214,13 +225,16 @@ The square root of  20.5 is approx.   4.528
 
 This program reads a text file called by user as an argument in the command line. The requirement is that a requested file is in the same directory (folder) as is this program.\
 
-To make that possible *sys* method was imported. Using the *sys.argv[1]* variable, it is defined that the filename is second argument when calling a program ( *sys.argv[0]* is the program we are trying to start ). References for this part of program go to [Python documentation](https://docs.python.org/3.8/library/sys.html) and [Geeksforgeeks.org](https://www.geeksforgeeks.org/command-line-arguments-in-python/#sys).\
+To make that possible *sys* method was imported. Using the *sys.argv[1]* variable, it is defined that the filename is second argument when calling a program ( *sys.argv[0]* is the program we are trying to start ).\
+References for this part of program go to [Python documentation](https://docs.python.org/3.8/library/sys.html) and [Geeksforgeeks.org](https://www.geeksforgeeks.org/command-line-arguments-in-python/#sys).
+
 With the *open( filename,'r' )* function we are opening a file that we called in the command line argument, and making it available just for reading.
 For counting the lower case letter 'e' the method *count()* was used, and the argument is a string *"e"*. Reference for the *count()* method is [Programiz](https://www.programiz.com/python-programming/methods/string/count).
 
 <details>
            <summary>User point of view</summary>
            <p>
+
 User call of the program is :
 
 ```
@@ -243,7 +257,8 @@ Output is simply the number of letter "e" in the called file :
     and h(x)=x3 in the range [0, 4] on the one set of axes. 
 
 This task was very interesting to do.\
-For creating this program ipython was used to find the best solution. The best results were chosen with the help of ipython log created by the argument *%logstart* in ipython. The reference for this program was [video](https://web.microsoftstream.com/video/41d1fabf-4b40-416d-babf-ee949521d3b9?referrer=https:%2F%2Flearnonline.gmit.ie%2Fcourse%2Fview.php%3Fid%3D1598) from the module page on Learnonline.
+For creating this program ipython was used to find the best solution. The best results were chosen with the help of ipython log created by the argument *%logstart* in ipython.\
+The reference for this program was [video](https://web.microsoftstream.com/video/41d1fabf-4b40-416d-babf-ee949521d3b9?referrer=https:%2F%2Flearnonline.gmit.ie%2Fcourse%2Fview.php%3Fid%3D1598) from the module page on Learnonline.
 
 To do the plot libraries *numpy* and *matplotlib.pyplot* had to be imported.\
 Variables *f*, *g* and *h* in the program define mathematical functions f(x), g(x) and h(x) from the task respectively.\
