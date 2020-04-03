@@ -65,12 +65,12 @@ User call of the program is :
 ```
 User input :
 ```
-Enter a sentence: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Enter a sentence: A large fawn jumped quickly over white zinc boxes.
 ```
 and the output is :
 
 ```
-.uiaagmeoo eeoa utuiin omtdmueo e tl nciiarttenc,eatsrldmsimrL
+.eo nzeiwrv lcu emjna ga
 ```
 
   ### ***Collatz***
@@ -145,6 +145,26 @@ Addition to the task:
     The weekly task is trickier than the previous ones but I really suggest you try to crack it.
     You'll find a simple algorithm for the problem if you Google "Newton's method for square roots".
     I really recommend trying to code it up yourself rather than looking at others' implementations.
+
+This program required hours of research. I checked the websites [Geeksforgeeks.org](https://www.geeksforgeeks.org/program-for-newton-raphson-method/), [StackOverflow](https://stackoverflow.com/questions/12850100/finding-the-square-root-using-newtons-method-errors), [Hackernoon](https://hackernoon.com/calculating-the-square-root-of-a-number-using-the-newton-raphson-method-a-how-to-guide-yr4e32zo), [Math.ubc.ca](https://www.math.ubc.ca/~pwalls/math-python/roots-optimization/newton/), but the most helpfull one was a Youtube video by [Mechtutor com](https://www.youtube.com/watch?v=szQUIRPrAgQ). The most challenging part was the understanding how the method works, and the coding after that was just implementing mathematical formulas.\
+Like in the Collatz task, here I also implemented checking if the user input indeed is the positive floating-point number. This was done with an *if* statement checking if the number was smaller than zero. If it is, number was changed into a postive one using absolute value with the help of *abs()* function.
+
+User call of the program is :
+
+```
+λ python 6-squareroot.py
+```
+User input :
+```
+Input positive floating-point number: -20
+```
+In case of putting in a negative integer the program will respond with a message that a number is negative and fix it for the user, giving the output straight away as well:
+```
+Oops, your input is a negative number. I'm sure it's a mistake.
+I'll fix it for you: 20.0
+The square root of  20.0 is approx.  4.472
+```
+
 
   ### ***Es***
 
