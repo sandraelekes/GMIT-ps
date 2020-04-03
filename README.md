@@ -138,8 +138,8 @@ It is the weekend, yay!
 
   ### ***Square root***
 
-    Write a program that takes a positive floating-point number as input and outputs an approximation
-    of its square root. 
+    Write a program that takes a positive floating-point number as input and outputs an 
+    approximation of its square root.
     You should create a function called sqrt that does this.
 
 Addition to the task: 
@@ -200,6 +200,28 @@ Output is simply the number of letter "e" in the called file :
     
     Write a program that displays a plot of the functions f(x)=x, g(x)=x2
     and h(x)=x3 in the range [0, 4] on the one set of axes. 
+
+This task was very interesting to do.\
+For creating this program ipython was used to find the best solution. The best results were chosen with the help of ipython log created by the argument *%logstart* in ipython. The reference for this program was [video](https://web.microsoftstream.com/video/41d1fabf-4b40-416d-babf-ee949521d3b9?referrer=https:%2F%2Flearnonline.gmit.ie%2Fcourse%2Fview.php%3Fid%3D1598) from the module page on Learnonline.
+
+To do the plot libraries *numpy* and *matplotlib.pyplot* had to be imported.\
+Variables *f*, *g* and *h* in the program define mathematical functions f(x), g(x) and h(x) from the task respectively.\
+Range was defined with the help of *arange()* function from *numpy* library. Since the range set in the task is [0.4], the step chosen for creating a nice looking plot is 0.1.
+The title, and both the x and y axis were labeled using the functions *title()*, *xlabel()* and *ylabel()* respectively from the *matplotlib.pyplot* library.\
+The plot is done with the help of dots - green for f(x), blue for g(x) and red for h(x). Tho help the user know which function is shown with which color, legend was created.
+
+The output of this task for the user is a saved image of the plot in the same directory (folder) as the program creating the plot.
+
+User call of the program is :
+
+```
+λ python 8-plotting.py
+```
+
+Output is the picture which should look like this:
+
+![alt text](https://raw.githubusercontent.com/sandraelekes/GMIT-ps/master/8-plotting.png "Result of plotting")
+
 
 ## Technologies
 
