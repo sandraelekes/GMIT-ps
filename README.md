@@ -223,7 +223,7 @@ The square root of  20.5 is approx.   4.528
     Write a program that reads in a text file and outputs the number of e's it contains.
     The program should take the filename from an argument on the command line. 
 
-This program reads a text file called by user as an argument in the command line. The requirement is that a requested file is in the same directory (folder) as is this program.\
+This program reads a text file called by user as an argument in the command line. The requirement is that a requested file is in the same directory (folder) as is this program.
 
 To make that possible *sys* method was imported. Using the *sys.argv[1]* variable, it is defined that the filename is second argument when calling a program ( *sys.argv[0]* is the program we are trying to start ).\
 References for this part of program go to [Python documentation](https://docs.python.org/3.8/library/sys.html) and [Geeksforgeeks.org](https://www.geeksforgeeks.org/command-line-arguments-in-python/#sys).
