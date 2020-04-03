@@ -18,8 +18,8 @@ I have previous knowledge and understanding of basics of coding in python so for
 * [Technologies](#technologies)
 
 
-## Weekly tasks
-
+Weekly tasks
+======
 ### ***BMI***
 
     Write a program that calculates somebody's Body Mass Index (BMI). 
@@ -28,9 +28,12 @@ I have previous knowledge and understanding of basics of coding in python so for
 
 This program is a basic calculation of a given formula based on the users input.\
 User inputs the height in centimeters and weight in kilograms. The challenge here is not to forget to convert height from centimeters to meters in order to get the correct answer.\
-Even though the formula could be done in one line, I chose to simplify the calculation by adding a new variable *hm*. This variable is used for converting height from centimeter to meters.\
-I also added the [rounding](https://www.geeksforgeeks.org/round-function-python) of the result to 2 points for a nicer touch. The idea goes to another student.
+Even though the formula could be done in one line, this way is chosen to simplify the calculation by adding a new variable *hm*. This variable is used for converting height from centimeter to meters.\
+The [rounding](https://www.geeksforgeeks.org/round-function-python) of the result to 2 points was added for a nicer touch. The idea goes to another student.
 
+<details>
+           <summary>User point of view</summary>
+           <p>
 User call of the program is :
 
 ```
@@ -46,11 +49,16 @@ and the output is :
 ```
 Your BMI is 24.69
 ```
+</p>
+</details>
+
+- - - -
+
   ### ***Second string***
 
     Write a program that takes asks a user to input a string and outputs every second letter in reverse order. 
 
-There are couple of ways to solve this problem, but I chose the method of slicing because it's simple and only one line of code. The idea was found on [Geeksforgeeks.org](https://www.geeksforgeeks.org/reverse-string-python-5-different-ways/).
+There are couple of ways to solve this problem, but the method of slicing is chosen because it's simple and only one line of code. The idea was found on [Geeksforgeeks.org](https://www.geeksforgeeks.org/reverse-string-python-5-different-ways/).
 
 The syntax of slicing is:
 ``` 
@@ -58,6 +66,9 @@ The syntax of slicing is:
 ```
 *Start* and *stop* are default values as we need the whole sentence. *Step* is negative because we need the string in the reverse order. The value is 2 because we need every second letter from the reversed order.
 
+<details>
+           <summary>User point of view</summary>
+           <p>
 User call of the program is :
 
 ```
@@ -72,6 +83,10 @@ and the output is :
 ```
 .eo nzeiwrv lcu emjna ga
 ```
+</p>
+</details>
+
+----
 
   ### ***Collatz***
     
@@ -86,7 +101,12 @@ In second *while* loop we are cheching whether a number is odd or even, with the
 The statement *if* checks if the number is even using modulus operation. If the remainder of the operation is zero, the number is even and the program divides the number by 2 and prints it out.\
 If the remainder is not zero, program performs operations from statement *else* - multiplying the number by three and adding one, and prints out the result.
 
+The output of the program looks neater if it's written in one line. That is done with the help of *end = " "* parameter, and the reference goes to [Geeksforgeeks.org](https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print/).
 
+<details>
+           <summary>User point of view</summary>
+           <p>
+         
 User call of the program is :
 
 ```
@@ -110,16 +130,23 @@ When user inputs the positive integer the output is :
 ```
 20 10 5 16 8 4 2 1
 ```
+</p>
+</details>
+
+----
 
   ### ***Weekday***
 
     Write a program that outputs whether or not today is a weekday.
 
-For this program it is neccessary to import *datetime* module so we can manipulete date and time. Even though the Programming and scripting videos gave the initial idea, a little bit of research on [Python documentation](https://docs.python.org/3/library/datetime.html#datetime.datetime.now) helped to crack the code.\
+For this program it is neccessary to import *datetime* module so we can manipulete date and time. Even though the Programming and scripting [video](https://web.microsoftstream.com/video/77f26693-82ed-4006-8c22-c61d37e2f77f) gave the initial idea, a little bit of research on [Python documentation](https://docs.python.org/3/library/datetime.html#datetime.datetime.now) helped to crack the code.\
 There I found out that by implementing *date.weekday()*, where Monday is 0 and Sunday is 6, I can easily check, with the help of *if* statement, whether today is weekday or weekend.
 
 It's important to run the program on both the weekday and weekend to get a correct result.
 
+<details>
+           <summary>User point of view</summary>
+           <p>
 User call of the program is :
 
 ```
@@ -134,7 +161,10 @@ On the weekend result is:
 ```
 It is the weekend, yay!
 ```
+</p>
+</details>
 
+----
 
   ### ***Square root***
 
@@ -154,7 +184,9 @@ Like in the Collatz task, here I also implemented checking if the user input ind
 
 Function was created with a keyword *def sqrt()*, and later called with the keywords *sqrt(x)*. In the function variable *n* is defined as an initial guess that first iteration equals to the number we want to root (variable *x* that was the user input). Next, *while* loop is checking 2 conditions of convergence. When conditions are no longer true, function returns the value of variable *x*. Function is called when the result is outputed.
 
-
+<details>
+           <summary>User point of view</summary>
+           <p>
 User call of the program is :
 
 ```
@@ -170,7 +202,10 @@ Oops, your input is a negative number. I'm sure it's a mistake.
 I'll fix it for you: 20.5
 The square root of  20.5 is approx.   4.528
 ```
+</p>
+</details>
 
+- - - -
 
   ### ***Es***
 
@@ -183,6 +218,9 @@ To make that possible *sys* method was imported. Using the *sys.argv[1]* variabl
 With the *open( filename,'r' )* function we are opening a file that we called in the command line argument, and making it available just for reading.
 For counting the lower case letter 'e' the method *count()* was used, and the argument is a string *"e"*. Reference for the *count()* method is [Programiz](https://www.programiz.com/python-programming/methods/string/count).
 
+<details>
+           <summary>User point of view</summary>
+           <p>
 User call of the program is :
 
 ```
@@ -194,7 +232,10 @@ Output is simply the number of letter "e" in the called file :
 ```
 116960
 ```
+</p>
+</details>
 
+- - - -
 
   ### ***Plotting***
     
@@ -211,6 +252,9 @@ The title, and both the x and y axis were labeled using the functions *title()*,
 The plot is done with the help of dots - green for f(x), blue for g(x) and red for h(x). Tho help the user know which function is shown with which color, legend was created.
 
 The output of this task for the user is a saved image of the plot in the same directory (folder) as the program creating the plot.
+<details>
+           <summary>User point of view</summary>
+           <p>
 
 User call of the program is :
 
@@ -222,8 +266,13 @@ Output is the picture which should look like this:
 
 ![alt text](https://raw.githubusercontent.com/sandraelekes/GMIT-ps/master/8-plotting.png "Result of plotting")
 
+</p>
+</details>
 
-## Technologies
+- - - -
+
+Technologies
+====
 
   * Visual Studio Code - version 1.43.2
   * Cmder - version 1.3.14.982
