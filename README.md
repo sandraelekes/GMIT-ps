@@ -138,7 +138,9 @@ It is the weekend, yay!
 
   ### ***Square root***
 
-    Write a program that takes a positive floating-point number as input and outputs an approximation of its square root. You should create a function called sqrt that does this.
+    Write a program that takes a positive floating-point number as input and outputs an approximation
+    of its square root. 
+    You should create a function called sqrt that does this.
 
 Addition to the task: 
     
@@ -146,8 +148,12 @@ Addition to the task:
     You'll find a simple algorithm for the problem if you Google "Newton's method for square roots".
     I really recommend trying to code it up yourself rather than looking at others' implementations.
 
-This program required hours of research. I checked the websites [Geeksforgeeks.org](https://www.geeksforgeeks.org/program-for-newton-raphson-method/), [StackOverflow](https://stackoverflow.com/questions/12850100/finding-the-square-root-using-newtons-method-errors), [Hackernoon](https://hackernoon.com/calculating-the-square-root-of-a-number-using-the-newton-raphson-method-a-how-to-guide-yr4e32zo), [Math.ubc.ca](https://www.math.ubc.ca/~pwalls/math-python/roots-optimization/newton/), but the most helpfull one was a Youtube video by [Mechtutor com](https://www.youtube.com/watch?v=szQUIRPrAgQ). The most challenging part was the understanding how the method works, and the coding after that was just implementing mathematical formulas.\
+This program required hours of research. I checked the websites [Geeksforgeeks.org](https://www.geeksforgeeks.org/program-for-newton-raphson-method/), [StackOverflow](https://stackoverflow.com/questions/12850100/finding-the-square-root-using-newtons-method-errors), [Hackernoon](https://hackernoon.com/calculating-the-square-root-of-a-number-using-the-newton-raphson-method-a-how-to-guide-yr4e32zo), [Math.ubc.ca](https://www.math.ubc.ca/~pwalls/math-python/roots-optimization/newton/), but the most helpfull one was a Youtube video by [Mechtutor com](https://www.youtube.com/watch?v=szQUIRPrAgQ). The most challenging part was the understanding how the method works, and the coding after that was just implementing mathematical formulas.
+
 Like in the Collatz task, here I also implemented checking if the user input indeed is the positive floating-point number. This was done with an *if* statement checking if the number was smaller than zero. If it is, number was changed into a postive one using absolute value with the help of *abs()* function.
+
+Function was created with a keyword *def sqrt()*, and later called with the keywords *sqrt(x)*. In the function variable *n* is defined as an initial guess that first iteration equals to the number we want to root (variable *x* that was the user input). Next, *while* loop is checking 2 conditions of convergence. When conditions are no longer true, function returns the value of variable *x*. Function is called when the result is outputed.
+
 
 User call of the program is :
 
@@ -156,23 +162,44 @@ User call of the program is :
 ```
 User input :
 ```
-Input positive floating-point number: -20
+Input positive floating-point number: -20.5
 ```
 In case of putting in a negative integer the program will respond with a message that a number is negative and fix it for the user, giving the output straight away as well:
 ```
 Oops, your input is a negative number. I'm sure it's a mistake.
-I'll fix it for you: 20.0
-The square root of  20.0 is approx.  4.472
+I'll fix it for you: 20.5
+The square root of  20.5 is approx.   4.528
 ```
 
 
   ### ***Es***
 
-    Write a program that reads in a text file and outputs the number of e's it contains. The program should take the filename from an argument on the command line. 
+    Write a program that reads in a text file and outputs the number of e's it contains.
+    The program should take the filename from an argument on the command line. 
+
+This program reads a text file called by user as an argument in the command line. The requirement is that a requested file is in the same directory (folder) as is this program.\
+
+To make that possible *sys* method was imported. Using the *sys.argv[1]* variable, it is defined that the filename is second argument when calling a program ( *sys.argv[0]* is the program we are trying to start ). References for this part of program go to [Python documentation](https://docs.python.org/3.8/library/sys.html) and [Geeksforgeeks.org](https://www.geeksforgeeks.org/command-line-arguments-in-python/#sys).\
+With the *open( filename,'r' )* function we are opening a file that we called in the command line argument, and making it available just for reading.
+For counting the lower case letter 'e' the method *count()* was used, and the argument is a string *"e"*. Reference for the *count()* method is [Programiz](https://www.programiz.com/python-programming/methods/string/count).
+
+User call of the program is :
+
+```
+λ python 7-es.py moby-dick.txt
+```
+
+Output is simply the number of letter "e" in the called file :
+
+```
+116960
+```
+
 
   ### ***Plotting***
     
-    Write a program that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes. 
+    Write a program that displays a plot of the functions f(x)=x, g(x)=x2
+    and h(x)=x3 in the range [0, 4] on the one set of axes. 
 
 ## Technologies
 
