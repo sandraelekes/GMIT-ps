@@ -73,8 +73,6 @@ and the output is :
 .uiaagmeoo eeoa utuiin omtdmueo e tl nciiarttenc,eatsrldmsimrL
 ```
 
-
-
   ### ***Collatz***
     
     Write a program that asks the user to input any positive integer and outputs the successive 
@@ -117,10 +115,33 @@ When user inputs the positive integer the output is :
 
     Write a program that outputs whether or not today is a weekday.
 
+For this program it is neccessary to import *datetime* module so we can manipulete date and time. Even though the Programming and scripting videos gave the initial idea, a little bit of research on [Python documentation](https://docs.python.org/3/library/datetime.html#datetime.datetime.now) helped to crack the code.\
+There I found out that by implementing *date.weekday()*, where Monday is 0 and Sunday is 6, I can easily check, with the help of *if* statement, whether today is weekday or weekend.
+
+It's important to run the program on both the weekday and weekend to get a correct result.
+
+User call of the program is :
+
+```
+λ python 5-weekday.py
+```
+This program does not requre any user input, it just outputs the result.
+On the weekday result is:
+```
+Yes, unfortunately today is a weekday.
+```
+On the weekend result is:
+```
+It is the weekend, yay!
+```
+
+
   ### ***Square root***
 
-    Write a program that takes a positive floating-point number as input and outputs an approximation of its square root. You should create a function called sqrt that does this.\
+    Write a program that takes a positive floating-point number as input and outputs an approximation of its square root. You should create a function called sqrt that does this.
+
 Addition to the task: 
+    
     The weekly task is trickier than the previous ones but I really suggest you try to crack it.
     You'll find a simple algorithm for the problem if you Google "Newton's method for square roots".
     I really recommend trying to code it up yourself rather than looking at others' implementations.
